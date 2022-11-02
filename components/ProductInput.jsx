@@ -23,8 +23,8 @@ const ProductInput = ({ onProductAdd }) => {
     }
 
     const addProductHandler = () => {
-        productName.length > 15
-            ?alert('te has escedido de caracteres')
+        productName.length > 12
+            ? alert('te has escedido de caracteres')
             : onProductAdd(productName, prodType,quantity);
         
         setProductName('');
@@ -61,7 +61,7 @@ const ProductInput = ({ onProductAdd }) => {
                     />
 
             </View>
-            <View style={styles.productInput2}>
+            <View style={styles.productInput}>
                 
             <SelectDropdown
                         data={prodTypes}
@@ -97,31 +97,14 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
         backgroundColor: '#defabb',
-        width: '96%',
+        width: '100%',
         height: 80,
         padding: 10,
-        color: 'white',
+        color: 'black',
         borderColor: 'white'
         
     },
-    productInput2: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        backgroundColor: '#defabb',
-        width: '96%',
-        height: 80,
-        padding: 10,
-        color: 'white',
-        borderColor: 'white'
-        
-    },
-    
-    productName: {
-        flex: 1,
-        color: 'white',
-        
-    },
+ 
     numberInput: {
         alignItems: 'center',
         height: 50
