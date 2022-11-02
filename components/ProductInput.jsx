@@ -23,8 +23,8 @@ const ProductInput = ({ onProductAdd }) => {
     }
 
     const addProductHandler = () => {
-        productName.length > 15
-            ?alert('te has escedido de caracteres')
+        productName.length > 12
+            ? alert('te has escedido de caracteres')
             : onProductAdd(productName, prodType,quantity);
         
         setProductName('');
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
         backgroundColor: '#defabb',
-        width: '96%',
+        width: '100%',
         height: 80,
         padding: 10,
         color: 'black',
@@ -105,12 +105,6 @@ const styles = StyleSheet.create({
         
     },
  
-    
-    productName: {
-        flex: 1,
-        color: 'white',
-        
-    },
     numberInput: {
         alignItems: 'center',
         height: 50

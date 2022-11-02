@@ -28,7 +28,7 @@ const ListItem = ({productId, productName, quantity, productType, isBought, onPr
                 break;   
                 
             default:
-                img = require('../assets/3082025.png');
+                img = require('../assets/fruit.png');
                 break;
         }
 
