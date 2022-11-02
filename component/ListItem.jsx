@@ -8,7 +8,7 @@ const ListItem = ({productId, productName, quantity, productType, isBought, onPr
         switch (type){
 
             case 'fruit':
-                img = require('../assets/3082025.png');
+                img = require('../assets/fruit.png');
                 break;
 
             case 'fish':
@@ -38,7 +38,7 @@ const ListItem = ({productId, productName, quantity, productType, isBought, onPr
     const handleBoughtTextStyle = () => {
 
         if (isBought) {
-            return styles.productBought;
+            return styles.prodComprado;
         }
 
         return styles.productInfo;
@@ -82,6 +82,13 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#000'
     },
+    prodComprado: {
+        fontSize: 18,
+        textDecorationLine: 'line-through',
+        textDecorationStyle: 'solid',
+        textAlign: 'center',
+        alignContent: 'center'
+    },
     listItemBought : {
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -104,13 +111,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         alignContent: 'center'
     },
-    productBought: {
-        fontSize: 18,
-        textDecorationLine: 'line-through',
-        textDecorationStyle: 'solid',
-        textAlign: 'center',
-        alignContent: 'center'
-    }
+  
 });
 
 export default ListItem;
