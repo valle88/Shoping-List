@@ -61,7 +61,7 @@ const ProductInput = ({ onProductAdd }) => {
                     />
 
             </View>
-            <View style={styles.productInput2}>
+            <View style={styles.productInput}>
                 
             <SelectDropdown
                         data={prodTypes}
@@ -104,18 +104,7 @@ const styles = StyleSheet.create({
         borderColor: 'white'
         
     },
-    productInput2: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        backgroundColor: '#defabb',
-        width: '96%',
-        height: 80,
-        padding: 10,
-        color: 'white',
-        borderColor: 'white'
-        
-    },
+ 
     
     productName: {
         flex: 1,
